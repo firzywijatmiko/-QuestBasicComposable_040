@@ -16,12 +16,10 @@ import com.example.myapplicationat.ui.theme.MyApplicationATTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             MyApplicationATTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    TataletakBoxColumnRow(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
